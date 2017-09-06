@@ -10,7 +10,7 @@ DISCLAIMER :❗️❗️ This project is on purpose to learn and entertain and h
 This project is in swift3 and available for iOS 9.
 
 ## Project ##
-modoTube is one of my first iOS project, in this project, I learnt :
+"modoTube" is one of my first iOS project, in this project, I learnt :
   - Organisation
       - MVC (Model View Controller)
       - Project organisation
