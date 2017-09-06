@@ -15,4 +15,12 @@ enum Constants {
         static let padding: CGFloat = 16.0
     }
     
+    enum Sounds {
+        static let Ahh = "ah"
+    }
+    
+    enum ButtonColor {
+        static let alpha: CGFloat = 0.5
+    }
+    
 }

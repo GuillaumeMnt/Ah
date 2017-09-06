@@ -23,7 +23,7 @@ def common
   pod 'SimpleAnimation'
   pod 'IQKeyboardManager'
   pod 'SwiftyUserDefaults'
-  pod 'ObjectMapper'
+  pod 'AlamofireObjectMapper'
 end
 
 target 'Ah' do

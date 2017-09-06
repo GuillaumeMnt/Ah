@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F60a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="20Q-tD-a8P">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="n0t-hB-TwG">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="20Q-tD-a8P" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="phe-AA-7uj"/>
+                        <viewControllerLayoutGuide type="bottom" id="gn8-dt-qxN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AvL-mV-h8O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen" translatesAutoresizingMaskIntoConstraints="NO" id="jLR-FJ-2t2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jLR-FJ-2t2" firstAttribute="top" secondItem="phe-AA-7uj" secondAttribute="bottom" id="GnE-UG-I6g"/>
+                            <constraint firstItem="jLR-FJ-2t2" firstAttribute="bottom" secondItem="gn8-dt-qxN" secondAttribute="top" id="Hkh-Bs-vZe"/>
+                            <constraint firstItem="jLR-FJ-2t2" firstAttribute="leading" secondItem="AvL-mV-h8O" secondAttribute="leading" id="Hmn-Zc-QuM"/>
+                            <constraint firstAttribute="trailing" secondItem="jLR-FJ-2t2" secondAttribute="trailing" id="Kb8-L1-Dua"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Juo-Aj-cCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="149.77511244377811"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashscreen" width="375" height="647"/>
+    </resources>
 </document>

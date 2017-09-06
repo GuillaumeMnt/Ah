@@ -7,8 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
 import Foundation
-import KeychainSwift
 import SafariServices
 
 // MARK: UITextField
@@ -18,25 +18,6 @@ extension UIViewController {
     func changeRootViewControllerTo(_ newRootViewController: UIViewController) {
         navigationController?.viewControllers = [newRootViewController]
         _ = navigationController?.popToRootViewController(animated: true)
-    }
-    
-    /// Keychain functions
-    final func saveDataToKeychain(_ value: String, forKey key: String) {
-        let keychain = KeychainSwift()
-        
-        keychain.set(value, forKey: key, withAccess: .accessibleWhenUnlockedThisDeviceOnly)
-    }
-    
-    final func getDataFromKeychain(forKey key: String) -> String? {
-        let keychain = KeychainSwift()
-        
-        return keychain.get(key)
-    }
-    
-    final func removeDataFromKeychain(forKey key: String) -> Bool {
-        let keychain = KeychainSwift()
-        
-        return keychain.delete(key)
     }
     
     /// Load web page
@@ -113,3 +94,24 @@ extension UICollectionView {
         self.register(nibName, forCellWithReuseIdentifier: reuseIdentifier)
     }
 }
+
+//// MARK: - AVFoundation
+//extension AVAudioPlayer {
+//    
+//    /// Play any sounds with an extension. Ex : .mp3, .ogg
+//    func playSound(player: AVAudioPlayer?, soundName: String, extensionFormat: String) {
+//        guard let url = Bundle.main.url(forResource: soundName, withExtension: extensionFormat) else { return }
+//        
+//        do {
+//            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+//            try AVAudioSession.sharedInstance().setActive(true)
+//            
+//            player = try AVAudioPlayer(contentsOf: url)
+//            guard let player = player else { return }
+//            
+//            player.play()
+//        } catch let error {
+//            print(error.localizedDescription)
+//        }
+//    }
+//}
