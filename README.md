@@ -7,6 +7,8 @@ You also have the widget, just selection it in your widget collection : When you
 
 DISCLAIMER :❗️❗️ This project is on purpose to learn and entertain and has no aim to make fun of Denis Brogniart or commercial it ... ❗️❗️
 
+Don't forget to "pod install" into the delivery of this project
+
 This project is in swift3 and available for iOS 9.
 
 ## Project ##
